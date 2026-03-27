@@ -1,0 +1,12 @@
+@model int
+
+<div class="container text-center mt-5">
+    <div class="alert alert-success">
+        <h2 class="display-4"><i class="bi bi-check-circle-fill"></i> Order Completed</h2>
+        <p class="lead">Thank you for your purchase!</p>
+        <p>Your order ID is <strong>@Model</strong>.</p>
+        <hr>
+        <p>We will process it as soon as possible.</p>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-primary mt-3">Return to Home</a>
+    </div>
+</div>
