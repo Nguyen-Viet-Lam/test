@@ -1,0 +1,36 @@
+@BMTT_BuoiCuoi_HostAddress = http://localhost:5030
+
+GET {{BMTT_BuoiCuoi_HostAddress}}/api/ProductApi
+Accept: application/json
+
+###
+
+GET {{BMTT_BuoiCuoi_HostAddress}}/api/ProductApi/1
+Accept: application/json
+
+###
+
+POST {{BMTT_BuoiCuoi_HostAddress}}/api/ProductApi
+Content-Type: application/json
+
+{
+  "name": "Hoa Hong",
+  "price": 1000,
+  "description": "Hoa Hong nhap tu Da Lat"
+}
+
+###
+
+PUT {{BMTT_BuoiCuoi_HostAddress}}/api/ProductApi/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Hoa Hong Do",
+  "price": 1200,
+  "description": "Cap nhat thong tin san pham"
+}
+
+###
+
+DELETE {{BMTT_BuoiCuoi_HostAddress}}/api/ProductApi/1
